@@ -36,7 +36,7 @@ namespace App\Http\Controllers\auth;
          // store data registration to table user which is name,npm,password
          $request->validate([
              'name' => 'required',
-             'npm' => 'required',
+             'email' => 'required',
              'password' => 'required'
          ]);
   
@@ -45,8 +45,8 @@ namespace App\Http\Controllers\auth;
   
   
          # Jika NPM sudah ada yang punya maka kita harus mencegahnya agar tidak bisa register
-         if(DB::table('users')->where('npm', $request->npm)->exists()){
-             Alert::error('Error', 'NPM udah ada yang punya oi');
+         if(DB::table('users')->where('email', $request->email)->exists()){
+             Alert::error('Error', 'email udah ada yang punya oi');
              return redirect('/registerPage');
          }
   
@@ -54,7 +54,7 @@ namespace App\Http\Controllers\auth;
          DB::table('users')->insert([
              'id' => $id + 1,
              'name' => $request->name,
-             'npm' => $request->npm,
+             'email' => $request->email,
              'password' => Hash::make($request->password)
   
          ]);
