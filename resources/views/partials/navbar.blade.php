@@ -7,7 +7,8 @@
                     
                     <!-- if user is logged in, show user name -->
                     @auth
-                    {{ Auth::user()->name }}
+                    <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-20">
+                    <!-- {{ Auth::user()->name }} -->
                     @else
                     <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-20">
                     @endauth  
@@ -26,11 +27,29 @@
  
                         @auth
                         <li class="group">
+                            <a href="/pickup" class="text-base text-black py-2 mx-8 flex group-hover:text-primary ">Pickup</a>
+                        </li>
+                        <li class="group">
+                            <a href="/pricelist" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Pricelist</a>
+                        </li>
+                        <li class="group">
                             <a href="/register" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Register</a>
                         </li>
                         <li class="group">
-                            <a href="/logout" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Logout</a>
+                            <a href="/pickuptime" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Jadwal Pickup</a>
                         </li>
+                        <li class="group">
+                            <a href="/exchange" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Exchange</a>
+                        </li>
+                        <li class="group">
+                            <a href="/aboutus" class="text-base text-black py-2 mx-8 flex group-hover:text-primary pr-20">About Us</a>
+                        </li>
+
+                        <li class="group">
+                            <a href="/myprofile" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">My Profile  <img src="{{ asset('image/profile.jpg') }}" class=" object-contain h-5 w-5 "></img></a>
+                        </li>
+
+
                         @else
                         <li class="group">
                             <a href="/login" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Login</a>

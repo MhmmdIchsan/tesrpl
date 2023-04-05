@@ -20,7 +20,7 @@ namespace App\Http\Controllers\auth;
      
      public function login(Request $request){
          $credential = $request->validate([
-             'npm' => 'required',
+             'email' => 'required',
              'password' => 'required'
          ]);
   
@@ -30,8 +30,8 @@ namespace App\Http\Controllers\auth;
              return redirect()->intended('/dashboard');
          }
          
-         Alert::error('Error', 'NPM atau Password salah');
-         return back()->with('loginError', 'NPM atau Password salah');
+         Alert::error('Error', 'Email atau Password salah');
+         return back()->with('loginError', 'Email atau Password salah');
   
  }
   
