@@ -23,6 +23,12 @@ namespace App\Http\Controllers;
             'title' => 'My Profile',
         ]);
      }
+
+     public function ongoing(){
+        return view('user.ongoing', [
+            'title' => 'Ongoing',
+        ]);
+     }
  }
   
   
