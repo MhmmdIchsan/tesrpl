@@ -1,10 +1,10 @@
- 
 @extends('layouts.app')
- 
- 
- 
- 
- 
- @section('content')
-     <!-- add table -->
-     <p class="">Dashboard</p>
+
+
+@section('body')
+class="bg-[#D6EEF5]"
+@endsection
+
+@section('content')
+
+@endsection

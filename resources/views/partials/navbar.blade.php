@@ -3,7 +3,7 @@
     <div class="container">
         <div class="flex items-center justify-between relative bg-[#A7D1DD] shadow-xl">
             <div class="px-4">
-                <a href="#home" class="font-bold text-lg text-primary block py-1">  
+                <a href="/dashboard" class="font-bold text-lg text-primary block py-1">  
                     
                     <!-- if user is logged in, show user name -->
                     @auth
@@ -33,9 +33,6 @@
                             <a href="/pricelist" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Pricelist</a>
                         </li>
                         <li class="group">
-                            <a href="/register" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Register</a>
-                        </li>
-                        <li class="group">
                             <a href="/pickuptime" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Jadwal Pickup</a>
                         </li>
                         <li class="group">
@@ -46,9 +43,8 @@
                         </li>
 
                         <li class="group">
-                            <a href="/myprofile" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">My Profile  <img src="{{ asset('image/profile.jpg') }}" class=" object-contain h-5 w-5 "></img></a>
-                        </li>
-
+                            <a href="/myprofile" class="text-base text-black py-2 mx-8 flex group-hover:text-primary pl-20">My Profile  <img src="{{ asset('image/profile.jpg') }}" class=" object-contain h-5 w-5 "></img></a>
+</li>
 
                         @else
                         <li class="group">
