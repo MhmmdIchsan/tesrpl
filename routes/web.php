@@ -42,6 +42,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('auth');
 Route::get('/myprofile', [PagesController::class, 'myprofile'])->middleware('auth');
 Route::get('/ongoing', [PagesController::class, 'ongoing'])->middleware('auth');
+Route::get('/history', [PagesController::class, 'history'])->middleware('auth');
  
  
 // Route ini akan mengarahkan ke halaman logout

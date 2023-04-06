@@ -29,6 +29,12 @@ namespace App\Http\Controllers;
             'title' => 'Ongoing',
         ]);
      }
+
+     public function history(){
+        return view('user.history', [
+            'title' => 'History',
+        ]);
+    }
  }
   
   
