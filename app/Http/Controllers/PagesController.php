@@ -17,6 +17,12 @@ namespace App\Http\Controllers;
              'title' => 'Dashboard',
          ]);
      }
+
+     public function myprofile(){
+        return view('user.myprofile', [
+            'title' => 'My Profile',
+        ]);
+     }
  }
   
   
