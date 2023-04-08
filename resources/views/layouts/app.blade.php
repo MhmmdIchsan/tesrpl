@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +15,10 @@
   
   <main class="min-h-screen">
     @yield('content')
-  @include('partials.footer')
+  
   </main>
  
- 
+  @include('partials.footer')
   @include('sweetalert::alert')
   @vite('resources/js/app.js')
  
