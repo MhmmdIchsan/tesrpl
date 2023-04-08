@@ -43,6 +43,7 @@ Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('aut
 Route::get('/myprofile', [PagesController::class, 'myprofile'])->middleware('auth');
 Route::get('/ongoing', [PagesController::class, 'ongoing'])->middleware('auth');
 Route::get('/history', [PagesController::class, 'history'])->middleware('auth');
+
  
  
 // Route ini akan mengarahkan ke halaman logout

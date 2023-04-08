@@ -1,7 +1,6 @@
-<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
- 
+<header class="relative inset-x-0 bottom-0 p-2 border-t border-[#15104D] bg-[#ECFBFF]">
     <div class="container">
-        <div class="flex items-center justify-between relative bg-[#A7D1DD] shadow-xl">
+        <div class="flex items-center inset-x-0 relative w-auto justify-between border-b border-[#15104D relative bg-[#A7D1DD] shadow-xl">
             <div class="px-4">
                 <a href="/dashboard" class="font-bold text-lg text-primary block py-1">  
                     
@@ -22,7 +21,7 @@
                     <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                 </button>
  
-                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none  ">
+                <nav id="nav-menu" class="hidden relative inset-x-0 w-auto py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none  ">
                     <ul class="block lg:flex ">
  
                         @auth
