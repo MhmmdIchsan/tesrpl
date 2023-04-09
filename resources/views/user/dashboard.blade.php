@@ -12,6 +12,7 @@ class="bg-[#D6EEF5]"
     <h1 class="block text-center font-bold text-5xl lg:text-5xl m-5 pt-24 text-[#737373]">Welcome <span
             class="underline"> {{ Auth::user()->name }}</span>!</h1>
     <div class="flex flex-wrap justify-center m-13 p-40">
+        <!-- Kotak Pertama -->
         <div class="justify-center p-5">
             <div class="relative flex mb-6 shadow-lg rounded-lg bg-white border border-black">
                 <div class="">
@@ -31,6 +32,8 @@ class="bg-[#D6EEF5]"
                 </div>
             </div>
         </div>
+
+        <!-- Kotak Kedua -->
         <div class="justify-center p-5">
             <div class="relative flex mb-6 shadow-lg rounded-lg bg-white border border-black">
                 <div class="">
@@ -50,6 +53,8 @@ class="bg-[#D6EEF5]"
                 </div>
             </div>
         </div>
+
+        <!-- Kotak Ketiga -->
         <div class="justify-center p-5">
             <div class="relative flex mb-6 shadow-lg rounded-lg bg-white border border-black">
                 <div class="">
