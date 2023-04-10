@@ -74,4 +74,4 @@ class="bg-[#D6EEF5]"
             </div>
         </div>
     </div>
-    @endsection
+@endsection
