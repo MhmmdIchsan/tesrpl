@@ -3,14 +3,7 @@
     <div class="flex inset-x-0 relative w-auto justify-between relative bg-[#A7D1DD] shadow-xl">
         <div class="px-4">
             <a href="/dashboard" class="font-bold text-lg text-primary block py-1">
-
-                <!-- if user is logged in, show user name -->
-                @auth
                 <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-20">
-                <!-- {{ Auth::user()->name }} -->
-                @else
-                <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-20">
-                @endauth
             </a>
 
         </div>
