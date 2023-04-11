@@ -35,6 +35,19 @@ namespace App\Http\Controllers;
             'title' => 'History',
         ]);
     }
+
+    public function pickup(){
+        return view('user.pickup', [
+            'title' => 'Pickup',
+        ]);
+    }
+
+    public function informasi(){
+        return view('user.informasi', [
+            'title' => 'Informasi',
+        ]);
+    }
+    
  }
   
   

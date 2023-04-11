@@ -15,7 +15,7 @@
   
   <main class="min-h-screen">
     @yield('content')
-  
+    
   </main>
  
   @include('partials.footer')
