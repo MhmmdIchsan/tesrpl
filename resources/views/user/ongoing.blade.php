@@ -21,7 +21,24 @@ class="bg-[#D6EEF5]"
         </div>
     </div>
 </section>
-
+<!-- make card -->
+<div class="flex flex-wrap justify-center pt-5">
+    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 px-4">
+        <div class="relative flex flex-col min-w-0 break-words bg-[#EFEFEF] w-full mb-6 shadow-lg rounded-lg">
+            <div class="px-4 py-5 flex-auto">
+                <div class="text-center">
+                    <p class="text-xs text-[#959595]"> ON-Going | Menunggu Driver Menjemput Sampah </p>
+                    <p class="font-bold text-2xl text-[#737373]"> 10, February 2023 </p>
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mt-6 justify-center shadow-lg rounded-lg">
+                        <div class="mt-5">
+                            <p class="text-center"> 10.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- End Hero Section -->
 
 
