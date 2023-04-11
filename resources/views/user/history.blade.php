@@ -25,6 +25,4 @@ class="bg-[#D6EEF5]"
 
 <!-- End Hero Section -->
 
-
-
 @endsection
