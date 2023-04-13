@@ -1,36 +1,42 @@
 <?php
 namespace App\Http\Controllers;
-  
- use Illuminate\Http\Request;
-  
- class PagesController extends Controller
- {
-     public function halamanUtama(){
-         return view('index', [
-             'title' => 'Rubbish Revive'
-         ]);
-     }
-  
-     public function dashboard(){
-  
-         return view('user.dashboard', [
-             'title' => 'Dashboard',
-         ]);
-     }
 
-     public function myprofile(){
+use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
+class PagesController extends Controller
+{
+    public function halamanUtama()
+    {
+        return view('index', [
+            'title' => 'Rubbish Revive'
+        ]);
+    }
+
+    public function dashboard()
+    {
+
+        return view('user.dashboard', [
+            'title' => 'Dashboard',
+        ]);
+    }
+
+    public function myprofile()
+    {
         return view('user.myprofile', [
             'title' => 'My Profile',
         ]);
-     }
+    }
 
-     public function ongoing(){
+    public function ongoing()
+    {
         return view('user.ongoing', [
             'title' => 'Ongoing',
         ]);
-     }
+    }
 
-     public function history(){
+    public function history()
+    {
         return view('user.history', [
             'title' => 'History',
         ]);
@@ -51,3 +57,19 @@ namespace App\Http\Controllers;
  }
   
   
+
+    public function exchange()
+    {
+        return view('user.exchange', [
+            'title' => 'Exchange',
+        ]);
+    }
+
+    public function tukar()
+    {
+        return view('user.tukar', [
+            'title' => 'Tukar',
+        ]);
+    }
+
+}

@@ -55,6 +55,14 @@ Route::post('/register', [RegisterController::class, 'store']);
     
 
 
+Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('auth');
+Route::get('/myprofile', [PagesController::class, 'myprofile'])->middleware('auth');
+Route::get('/ongoing', [PagesController::class, 'ongoing'])->middleware('auth');
+Route::get('/history', [PagesController::class, 'history'])->middleware('auth');
+Route::get('/exchange', [PagesController::class, 'exchange'])->middleware('auth');
+Route::get('/tukar', [PagesController::class, 'tukar'])->middleware('auth');
+ 
+ 
 // Route ini akan mengarahkan ke halaman logout
 // url: yang akhiranya adalah /logout akan diarahkan ke halaman logout
 // jika user sudah logout maka akan diarahkan ke halaman login dan session akan berhenti
