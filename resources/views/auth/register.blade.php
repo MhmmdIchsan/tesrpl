@@ -7,11 +7,6 @@
  
 @section('content')
     <!-- Register form that includes the name, npm, password  using tailwind css -->
- 
- 
- 
- 
- 
         <div class="min-h-screen flex flex-col justify-center pb-8">
             <div class="sm:mx-auto sm:w-full sm:max-w-md">
                 <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
