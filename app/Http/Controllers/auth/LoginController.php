@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\auth;
+namespace app\Http\Controllers\auth;
   
  use App\Http\Controllers\Controller;
  use Illuminate\Http\Request;
@@ -89,5 +89,3 @@ namespace App\Http\Controllers\auth;
          return redirect('/');
      }
  }
-  
-  
